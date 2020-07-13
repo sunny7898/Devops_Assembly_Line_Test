@@ -12,9 +12,7 @@ pipeline {
 				sh "echo test 1"
 				}
 			}
-		}
-		
-	
+		}	
 		stage("Production") {
 			steps {
 				sh "echo prod 1"
