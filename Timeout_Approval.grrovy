@@ -11,7 +11,7 @@ pipeline {
 			steps {
 				sh "echo test 1"
 				sh "echo test 2" 
-				timeout(time: 1, unit: 'MINUTE') {
+				timeout(time:1, unit: 'MINUTES') {
 					input message: 'Waiting for approval?'
 				}
 			}
